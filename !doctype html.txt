@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090c">
+  <meta name="description" content="Личное космическое досье Байжана Асылмурата.">
+  <title>Байжан Асылмурат — личное досье</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Байжан Асылмурат — на главную">
+        <span class="brand-mark" aria-hidden="true">B<span>.</span></span>
+        <span class="brand-name">ЛИЧНОЕ ДОСЬЕ <span>№ 0411</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#about">О нём</a>
+        <a href="#orbit">Орбита недели</a>
+        <a href="#classified">Секретный уровень</a>
+      </nav>
+      <a class="header-signal" href="#signal">Связаться <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> СИГНАЛ ИЗ ГЛУБОКОГО КОСМОСА</p>
+          <h1 id="hero-title">Байжан<br><span>Асылмурат</span></h1>
+          <p class="hero-description">У каждого своя вселенная.<br>Это — его.</p>
+          <div class="hero-meta">
+            <div class="meta-item">
+              <span class="meta-label">ДАТА РОЖДЕНИЯ</span>
+              <span class="meta-value">04.11.2011</span>
+            </div>
+            <span class="meta-divider" aria-hidden="true"></span>
+            <div class="meta-item">
+              <span class="meta-label">СТАТУС</span>
+              <span class="meta-value status-value"><span class="live-dot"></span> На связи</span>
+            </div>
+          </div>
+          <a class="scroll-link" href="#about"><span class="scroll-line"></span> ИССЛЕДОВАТЬ ДОСЬЕ</a>
+        </div>
+
+        <div class="hero-visual">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="hero-image-frame">
+            <img src="images/photo1.jpg" alt="Байжан Асылмурат" class="hero-image">
+            <span class="image-index">ПОРТРЕТ · 01</span>
+            <span class="image-cross cross-top" aria-hidden="true"></span>
+            <span class="image-cross cross-bottom" aria-hidden="true"></span>
+          </div>
+          <div class="hero-coordinate glass-panel">
+            <span class="coordinate-icon" aria-hidden="true">✳</span>
+            <span><small>КОСМИЧЕСКИЕ КООРДИНАТЫ</small><strong>11°04′ · CLASSIFIED</strong></span>
+          </div>
+          <span class="hero-side-note">PERSONAL<br>UNIVERSE / 01</span>
+        </div>
+        <div class="hero-bottom-note"><span>01</span> НЕБОЛЬШАЯ ВСЕЛЕННАЯ, БОЛЬШОЙ ХАРАКТЕР</div>
+      </section>
+
+      <section class="section-wrap about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / КРАТКАЯ СВОДКА</p>
+          <h2 id="about-title">Время в его <span>орбите</span></h2>
+        </div>
+        <div class="age-panel glass-panel">
+          <div class="age-copy">
+            <span class="meta-label">С МОМЕНТА РОЖДЕНИЯ ПРОШЛО</span>
+            <p>Каждая секунда — часть его истории.</p>
+          </div>
+          <div class="age-counter" aria-label="Время с момента рождения">
+            <div class="time-unit"><strong id="age-years">—</strong><span>ЛЕТ</span></div>
+            <span class="time-separator" aria-hidden="true">:</span>
+            <div class="time-unit"><strong id="age-days">—</strong><span>ДНЕЙ</span></div>
+            <span class="time-separator" aria-hidden="true">:</span>
+            <div class="time-unit"><strong id="age-hours">—</strong><span>ЧАСОВ</span></div>
+            <span class="time-separator" aria-hidden="true">:</span>
+            <div class="time-unit"><strong id="age-minutes">—</strong><span>МИНУТ</span></div>
+            <span class="time-separator" aria-hidden="true">:</span>
+            <div class="time-unit"><strong id="age-seconds">—</strong><span>СЕКУНД</span></div>
+          </div>
+          <span class="age-orbit-mark" aria-hidden="true">✳</span>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card game-card glass-panel">
+            <div class="card-topline"><span class="card-number">01</span><span class="card-label">ВЫБОР ИГРОКА</span></div>
+            <div class="game-emblem" aria-hidden="true">
+              <span class="emblem-ring"></span>
+              <span class="emblem-core">S2</span>
+              <span class="emblem-cross">✳</span>
+            </div>
+            <div class="feature-card-copy">
+              <span class="meta-label">ЛЮБИМАЯ ИГРА</span>
+              <h3>Standoff 2</h3>
+              <p>Тактика, реакция и точность — его поле боя.</p>
+            </div>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+
+          <article class="feature-card fact-card glass-panel">
+            <div class="card-topline"><span class="card-number">02</span><span class="card-label">ФАКТ ИЗ ДОСЬЕ</span></div>
+            <div class="fact-number" aria-label="Тринадцать">13<span>×</span></div>
+            <div class="feature-card-copy">
+              <span class="meta-label">НЕОЖИДАННЫЙ ФАКТ</span>
+              <h3>13 жён</h3>
+              <p>Невероятно? В его досье это записано уверенно.</p>
+            </div>
+            <span class="fact-stamp">CONFIRMED<br>IN THIS UNIVERSE</span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-wrap orbit-section" id="orbit" aria-labelledby="orbit-title">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">02 / СОЦИАЛЬНАЯ ОРБИТА</p>
+            <h2 id="orbit-title">Кто рядом <span>сегодня</span></h2>
+          </div>
+          <p class="section-aside">Еженедельный маршрут<br>обновляется автоматически</p>
+        </div>
+        <div class="schedule-layout">
+          <div class="schedule-photo">
+            <img src="images/photo2.jpg" alt="Байжан в компании друзей" loading="lazy">
+            <span class="photo-caption"><span class="live-dot"></span> КАДР ИЗ ЕГО ВСЕЛЕННОЙ</span>
+          </div>
+          <div class="schedule-panel glass-panel">
+            <div class="schedule-today">
+              <div>
+                <span class="meta-label">СЕГОДНЯ</span>
+                <h3 id="today-name">Загружаем день...</h3>
+              </div>
+              <span class="today-orbit" aria-hidden="true">✳</span>
+            </div>
+            <p class="schedule-date" id="today-date"></p>
+            <div class="schedule-days" role="list" aria-label="Расписание на неделю">
+              <div class="schedule-row" data-day="1" role="listitem"><span class="day-name">ПОНЕДЕЛЬНИК</span><span class="companion">Бухар-Жырау</span><span class="day-indicator">●</span></div>
+              <div class="schedule-row" data-day="2" role="listitem"><span class="day-name">ВТОРНИК</span><span class="companion">Бухар-Жырау</span><span class="day-indicator">●</span></div>
+              <div class="schedule-row" data-day="3" role="listitem"><span class="day-name">СРЕДА</span><span class="companion">Бухар-Жырау</span><span class="day-indicator">●</span></div>
+              <div class="schedule-row" data-day="4" role="listitem"><span class="day-name">ЧЕТВЕРГ</span><span class="companion">Бухар-Жырау</span><span class="day-indicator">●</span></div>
+              <div class="schedule-row" data-day="5" role="listitem"><span class="day-name">ПЯТНИЦА</span><span class="companion">Бухар-Жырау</span><span class="day-indicator">●</span></div>
+              <div class="schedule-row" data-day="6" role="listitem"><span class="day-name">СУББОТА</span><span class="companion">Улжан</span><span class="day-indicator">●</span></div>
+              <div class="schedule-row" data-day="0" role="listitem"><span class="day-name">ВОСКРЕСЕНЬЕ</span><span class="companion">Улжан</span><span class="day-indicator">●</span></div>
+            </div>
+            <div class="schedule-legend"><span class="live-dot"></span> ПЛАНЕТА ТЕКУЩЕГО ДНЯ</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-wrap classified-section" id="classified" aria-labelledby="classified-title">
+        <div class="classified-orbit" aria-hidden="true"></div>
+        <div class="classified-copy">
+          <p class="eyebrow">03 / УРОВЕНЬ ДОПУСКА: TOP SECRET</p>
+          <h2 id="classified-title">Режим <span>скуки</span></h2>
+          <p class="classified-description">Когда становится скучно, он начинает веселиться.<br>Подробности находятся под защитой.</p>
+        </div>
+        <div class="secret-card glass-panel">
+          <div class="secret-lock" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M14 21v-6a10 10 0 0 1 20 0v6M10 21h28v22H10z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="24" cy="31" r="3" fill="currentColor"/>
+              <path d="M24 34v4" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="meta-label">ЗАШИФРОВАННЫЙ ФАЙЛ · 04</span>
+          <h3>Когда становится скучно...</h3>
+          <p class="secret-preview" aria-hidden="true">█▓░▒ ░▓█ ▒░▓ █▒░ ▓░█</p>
+          <button class="secret-button" id="secret-button" type="button" aria-controls="secret-result">Попытаться открыть <span aria-hidden="true">↗</span></button>
+          <p class="secret-result" id="secret-result" role="status" hidden></p>
+          <span class="secret-clearance">ДОПУСК: TOP SECRET</span>
+        </div>
+        <span class="classified-code" aria-hidden="true">ACCESS_LEVEL_04<br>ENCRYPTION_ACTIVE</span>
+      </section>
+
+      <section class="signal-section" id="signal" aria-labelledby="signal-title">
+        <div class="signal-inner section-wrap">
+          <p class="eyebrow">ЕСТЬ СИГНАЛ? ОН УЖЕ В КОСМОСЕ.</p>
+          <h2 id="signal-title">Отправь ему<br><span>сообщение</span></h2>
+          <button class="signal-button" id="open-signal" type="button">
+            <span>Отправить сигнал</span>
+            <span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+          <span class="signal-decoration" aria-hidden="true">✳</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">B<span>.</span></span>
+        <span class="brand-name">ЛИЧНОЕ ДОСЬЕ <span>№ 0411</span></span>
+      </a>
+      <p>СОЗДАНО В ЕГО ВСЕЛЕННОЙ · <span id="current-year"></span></p>
+      <a class="back-to-top" href="#home">НАВЕРХ ↑</a>
+    </footer>
+  </div>
+
+  <dialog class="signal-dialog" id="signal-dialog" aria-labelledby="dialog-title">
+    <form method="dialog">
+      <button class="dialog-close" aria-label="Закрыть окно">×</button>
+    </form>
+    <span class="dialog-orbit" aria-hidden="true">✳</span>
+    <p class="eyebrow">СИГНАЛ ПРИНЯТ</p>
+    <h2 id="dialog-title">Сообщение<br><span>отправлено</span></h2>
+    <p>Твоя передача уже на его орбите.</p>
+    <button class="dialog-done" id="close-signal" type="button">Понятно <span aria-hidden="true">↗</span></button>
+  </dialog>
+</body>
+</html>
