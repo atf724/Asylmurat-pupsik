@@ -168,10 +168,17 @@ const secretButton = document.querySelector("#secret-button");
 const secretResult = document.querySelector("#secret-result");
 const secretCard = secretButton.closest(".secret-card");
 const scrambleCharacters = "01▓▒░#%&@$";
+const secretClicksRequired = 200;
+let secretClickCount = 0;
 let scrambleInterval;
 
 secretButton.addEventListener("click", () => {
   if (secretButton.disabled) return;
+
+  secretClickCount += 1;
+  if (secretClickCount < secretClicksRequired) {
+    return;
+  }
 
   secretButton.disabled = true;
   secretButton.textContent = "Идёт дешифровка...";
@@ -190,8 +197,8 @@ secretButton.addEventListener("click", () => {
     window.clearInterval(scrambleInterval);
     secretCard.classList.remove("is-unlocking");
     secretResult.classList.remove("is-hacking");
-    secretResult.textContent = "ДОСТУП ЗАПРЕЩЁН. Информация о способах веселья строго засекречена.";
-    secretButton.textContent = "Файл заблокирован";
+    secretResult.textContent = "Он любит Марго, Шынара, Насихата и Ақбілека.";
+    secretButton.textContent = "Файл открыт";
   }, 1800);
 });
 
