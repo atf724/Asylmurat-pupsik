@@ -167,6 +167,7 @@ document.querySelector("#current-year").textContent = String(new Date().getFullY
 const secretButton = document.querySelector("#secret-button");
 const secretResult = document.querySelector("#secret-result");
 const secretCard = secretButton.closest(".secret-card");
+const secretCounter = document.querySelector("#secret-counter");
 const scrambleCharacters = "01▓▒░#%&@$";
 const secretClicksRequired = 200;
 let secretClickCount = 0;
@@ -176,12 +177,13 @@ secretButton.addEventListener("click", () => {
   if (secretButton.disabled) return;
 
   secretClickCount += 1;
+  secretCounter.textContent = String(secretClicksRequired - secretClickCount);
   if (secretClickCount < secretClicksRequired) {
     return;
   }
 
   secretButton.disabled = true;
-  secretButton.textContent = "Идёт дешифровка...";
+  secretButton.firstElementChild.textContent = "Идёт дешифровка...";
   secretCard.classList.add("is-unlocking");
   secretResult.hidden = false;
   secretResult.classList.add("is-hacking");
@@ -197,8 +199,8 @@ secretButton.addEventListener("click", () => {
     window.clearInterval(scrambleInterval);
     secretCard.classList.remove("is-unlocking");
     secretResult.classList.remove("is-hacking");
-    secretResult.textContent = "Он любит Марго, Шынара, Насихата и Ақбілека.";
-    secretButton.textContent = "Файл открыт";
+    secretResult.textContent = "Секретный факт удалён.";
+    secretButton.firstElementChild.textContent = "Файл открыт";
   }, 1800);
 });
 
