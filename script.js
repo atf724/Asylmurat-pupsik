@@ -169,7 +169,7 @@ const secretResult = document.querySelector("#secret-result");
 const secretCard = secretButton.closest(".secret-card");
 const secretCounter = document.querySelector("#secret-counter");
 const scrambleCharacters = "01▓▒░#%&@$";
-const secretClicksRequired = 200;
+const secretClicksRequired = 200000;
 let secretClickCount = 0;
 let scrambleInterval;
 
